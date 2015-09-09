@@ -13,7 +13,7 @@ main()
 {
 	setlocale(LC_ALL,"esm");
 	char sel, cin[100];
-	int suma=0,sum_his=0,i,aux,num_ticket=0,sumat=0;
+	int suma=0,i,aux;
 	FILE *arch;
     
 	system ("color f0");
@@ -32,8 +32,8 @@ main()
 	          if (arch==NULL)                 
 	    		     p("ERROR");
 		        else
-			        	{
-		        while(feof(arch)==NULL)       //Verificar hasta que termine el archivo
+			        {
+		               while(feof(arch)==NULL)       //Verificar hasta que termine el archivo
 		             {
 		             fgets(cin,3,arch);  //hace grupos de dos caracteres
 		             aux=atoi(cin); //transformación de char a int
@@ -60,14 +60,14 @@ main()
 		      { 
 		       system("CLS");
 		       p("\n\n Tu pedido fue el siguiente:\n");      //Contador del pedido en cuanto al menu
-       	   p("-------------------------\n"   );       
-           p(" %d Cubana   \n", c[0].cantidad);
-           p(" %d Jamon    \n", c[1].cantidad); 
-           p(" %d Especial \n", c[2].cantidad); 
+       	       p("-------------------------\n"   );       
+               p(" %d Cubana   \n", c[0].cantidad);
+               p(" %d Jamon    \n", c[1].cantidad); 
+               p(" %d Especial \n", c[2].cantidad); 
 		       p(" %d Refresco \n", c[3].cantidad);                   
-           p("\n El monto a pagar es de: %d\n\n", suma);
-          break;
-          }
+               p("\n El monto a pagar es de: %d\n\n", suma);
+               break;
+              }
 
     switch(sel) //Sel sirve de bandera para tomar desiciones
 	      {
