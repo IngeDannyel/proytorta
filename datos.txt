@@ -1,0 +1,11 @@
+Bienvenidos a la tortería LAGRANGE
+
+El menu es el siguiente
+
+-------------------------       
+a.- Cubana   $40 
+b.- Jamon    $15 
+c.- Especial $55 
+d.- Refresco $10 
+e.- Salir 
+----------------------
